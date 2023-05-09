@@ -192,6 +192,9 @@ body {
 		width: auto;
 		height: auto;
 	}
+	.sections .flex-container {
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width: 820px) and (max-width: 1180px){
