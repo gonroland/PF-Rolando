@@ -13,29 +13,113 @@
 	<!-- Main CSS -->
 <link href="../css/styles.css" rel="stylesheet" type="text/css">
 <title>Reservations</title>
+<meta name="description" content="Reservations page of The Continental Hotel website">
 </head>
 <body>
 	<div class="topnav">
-		<div class="logo_nav">
-			<img src="../assets/img/logos/continental_logo.jpg" alt="" class="logo">
-		</div>
+		<div>
+			<a href="../index.html"><img src="../assets/img/logos/continental_logo.jpg" alt="Continental Logo Hotel" class="logo img-fluid" href=""></a>
+		</div>	
 		<header>
-			 <nav class="navbar navbar-default">
-				 <div class="container-fluid">
-					 <ul>
-						 <li><a href="../index.html">Inicio</a></li>
-						 <li><a href="services.html">Services</a></li>
-						 <li><a href="restaurant.html">The Golden Duck</a></li>
-						 <li><a href="#reservations">Reservations</a></li>
-						 <li><a href="contact.html">Contact</a></li>
-					 </ul>
-				 </div>
-			 </nav>
+						 <nav class="navbar navbar-expand-sm navbar-light">
+                    <div class="container">
+                        <button class="navbar-toggler bg-light-subtle" type="button" data-toggle="collapse" data-target="#navbar1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse container-fluid" id="navbar1">
+                         <ul>
+                             <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                             <li class="nav-item"><a href="services.html">Services</a></li>
+                             <li class="nav-item"><a href="restaurant.html">The Golden Duck</a></li>
+                             <li class="nav-item"><a href="reservations.html">Reservations</a></li>
+                             <li class="nav-item"><a href="contact.html">Contact</a></li>
+                          </ul> 
+                    </div>
+                   </div>
+                 </nav>
 		</header>
 	</div>
 	<div class="background" float>
-		<img id="home" src="../assets/img/portfolio/reservas.jpg" alt="" class="background">
+		<img id="home" src="../assets/img/portfolio/reservas.jpg" alt="Reservations Banner" class="background">
 	</div>
+    <section id="habitaciones" class="habitaciones py-5">
+        <div class="container">
+          <h2 class="text-center mb-4 titles">Our Rooms</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../assets/img/portfolio/habitacion1.jpg" class="card-img-top" alt="Superior Room">
+                <div class="card-body">
+                  <h5 class="card-title">Superior</h5>
+                  <p class="card-text">Experience the epitome of luxury in our exquisitely designed Superior Room, where meticulous attention to detail meets uncompromising comfort for an unforgettable stay.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../assets/img/portfolio/habitacion2.jpg" class="card-img-top" alt="Exclusive Room">
+                <div class="card-body">
+                  <h5 class="card-title">Exclusive</h5>
+                  <p class="card-text"> Indulge in the ultimate level of exclusivity in our refined Exclusive Room, where personalized service, lavish amenities, and impeccable attention to detail redefine luxury.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="../assets/img/portfolio/habitacion3.jpg" class="card-img-top" alt="Suite Room">
+                <div class="card-body">
+                  <h5 class="card-title">Suite</h5>
+                  <p class="card-text">Discover pure grandeur and panoramic views in our expansive Suite Room, where opulence and comfort merge seamlessly to create an unmatched stay of unparalleled luxury.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+</section>
+     <section id="reservas" class="reservas py-5" style="background-color: darkslategray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="titles">Book a Room</h2>
+              <form>
+                <div class="form-group">
+                  <label for="nombre">Name</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="telefono">Phone Number</label>
+                  <input type="tel" class="form-control" id="telefono" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="fecha-llegada">Check-In</label>
+                  <input type="date" class="form-control" id="fecha-llegada">
+                </div>
+                <div class="form-group">
+                  <label for="fecha-salida">Check-Out</label>
+                  <input type="date" class="form-control" id="fecha-salida">
+                </div>
+                <div class="form-group">
+                  <label for="habitacion">Room Type</label>
+                  <select class="form-control" id="habitacion">
+                    <option>Superior</option>
+                    <option>Exclusive</option>
+                    <option>Suite</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #d7ac46">Book</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <img src="../assets/img/portfolio/frente.webp" class="img-fluid" alt="Hotel Painting">
+            </div>
+          </div>
+        </div>
+      </section>
+    
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Links  -->
@@ -81,5 +165,8 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+   <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>

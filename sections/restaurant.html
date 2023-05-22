@@ -13,29 +13,96 @@
 	<!-- Main CSS -->
 <link href="../css/styles.css" rel="stylesheet" type="text/css">
 <title>The Golden Duck</title>
+<meta name="description" content="Restaurant of The Continental Hotel">
 </head>
 <body>
 	<div class="topnav">
-		<div class="logo_nav">
-			<img src="../assets/img/logos/continental_logo.jpg" alt="" class="logo">
-		</div>
+		<div>
+			<a href="../index.html"><img src="../assets/img/logos/continental_logo.jpg" alt="Continental Logo Hotel" class="logo img-fluid" href=""></a>
+		</div>	
 		<header>
-			 <nav class="navbar navbar-default">
-				 <div class="container-fluid">
-					 <ul>
-						 <li><a href="../index.html">Inicio</a></li>
-						 <li><a href="services.html">Services</a></li>
-						 <li><a href="#restaurant">The Golden Duck</a></li>
-						 <li><a href="reservations.html">Reservations</a></li>
-						 <li><a href="contact.html">Contact</a></li>
-					 </ul> 
-				 </div>
-			 </nav>
+			 			 <nav class="navbar navbar-expand-sm navbar-light">
+                    <div class="container">
+                        <button class="navbar-toggler bg-light-subtle" type="button" data-toggle="collapse" data-target="#navbar1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse container-fluid" id="navbar1">
+                         <ul>
+                             <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                             <li class="nav-item"><a href="services.html">Services</a></li>
+                             <li class="nav-item"><a href="restaurant.html">The Golden Duck</a></li>
+                             <li class="nav-item"><a href="reservations.html">Reservations</a></li>
+                             <li class="nav-item"><a href="contact.html">Contact</a></li>
+                          </ul> 
+                    </div>
+                   </div>
+                 </nav>
 		</header>
 	</div>
 	<div class="background" float>
-		<img id="home" src="../assets/img/portfolio/restaurante.jpg" alt="" class="background">
+		<img id="home" src="../assets/img/portfolio/restaurante.jpg" alt="Restaurant image" class="background">
 	</div>
+      <!-- Cabecera -->
+  <div class="jumbotron cabecera">
+    <div class="container text-center">
+      <h1>The Golden Duck</h1>
+        <p class="subtitles">Exclusive Dishes</p>
+      <a href="#menu" class="btn btn-primary" style="background-color: #d7ac46">See our menu</a>
+    </div>
+  </div>
+
+  <!-- Sección Acerca de -->
+  <section id="about" class="py-5" style="background-color: darkslategray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="color: white">
+          <h2>About us</h2>
+          <p>Step into the world of refined elegance at The Golden Duck, an exclusive fine dining establishment where culinary artistry and exceptional service come together. This distinguished restaurant sets the stage for an extraordinary gastronomic experience, showcasing a cuisine that merges contemporary innovation with timeless flavors.</p>
+        <p>Nestled in a tastefully decorated space adorned with opulent accents and soft lighting, The Golden Duck exudes an ambiance of sophistication and class. The attentive and knowledgeable staff welcomes guests with warm hospitality, guiding them through an unparalleled culinary journey.</p>
+        <p>The menu at The Golden Duck is a masterful symphony of flavors, featuring a fusion of international influences and locally sourced ingredients. Each dish is thoughtfully crafted, showcasing the culinary prowess of the skilled chefs who push boundaries and reimagine traditional recipes.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="../assets/img/portfolio/comida.jpg" class="img-fluid" alt="Restaurante">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Menú -->
+  <section id="menu" class="menu bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 titles">Menu</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/img/portfolio/menu1.webp" class="card-img-top" alt="Plato 1">
+            <div class="card-body">
+              <h5 class="card-title">Kobe Beef</h5>
+              <p class="card-text">Indulge in the ultimate luxury of Kobe Beef—a melt-in-your-mouth delight. Experience unparalleled tenderness and exceptional flavor in each succulent bite, expertly prepared and served with delectable accompaniments. A true masterpiece of fine dining awaits you.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/img/portfolio/menu2.webp" class="card-img-top" alt="Plato 2">
+            <div class="card-body">
+              <h5 class="card-title">Lobster, Stuffed Rigatoni, Carrot Purée, and Corn Sabayon</h5>
+              <p class="card-text">This luxurious dish features tender chunks of succulent lobster meat, stuffed rigatoni pasta filled with a flavorful mixture, velvety carrot purée, and a luscious corn sabayon. Each element harmoniously combines to create a symphony of tastes and textures that will tantalize your taste buds and leave you craving for more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../assets/img/portfolio/menu3.webp" class="card-img-top" alt="Plato 3">
+            <div class="card-body">
+              <h5 class="card-title">Masa Toro with Caviar</h5>
+              <p class="card-text">Masa Toro with Caviar is an exquisite culinary creation that showcases the delicate flavors of Masa Toro, a premium cut of fatty tuna, paired with the luxurious touch of caviar. This dish is a true indulgence for sushi enthusiasts and connoisseurs of fine dining.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Links  -->
@@ -81,5 +148,8 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+   <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>

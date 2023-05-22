@@ -13,29 +13,60 @@
 	<!-- Main CSS -->
 <link href="../css/styles.css" rel="stylesheet" type="text/css">
 <title>Contact</title>
+<meta name="description" content="Contact page of The Continental Hotel website">
 </head>
 <body>
 	<div class="topnav">
-		<div class="logo_nav">
-			<img src="../assets/img/logos/continental_logo.jpg" alt="" class="logo">
-		</div>
+		<div>
+			<a href="../index.html"><img src="../assets/img/logos/continental_logo.jpg" alt="Continental Logo Hotel" class="logo img-fluid" href=""></a>
+		</div>	
 		<header>
-			 <nav class="navbar navbar-default">
-				 <div class="container-fluid">
-					 <ul>
-						 <li><a href="../index.html">Inicio</a></li>
-						 <li><a href="services.html">Services</a></li>
-						 <li><a href="restaurant.html">The Golden Duck</a></li>
-						 <li><a href="reservations.html">Reservations</a></li>
-						 <li><a href="#contact">Contact</a></li>
-					 </ul> 
-				  </div>
-			 </nav>
+				 <nav class="navbar navbar-expand-sm navbar-light">
+                    <div class="container">
+                        <button class="navbar-toggler bg-light-subtle" type="button" data-toggle="collapse" data-target="#navbar1">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse container-fluid" id="navbar1">
+                         <ul>
+                             <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                             <li class="nav-item"><a href="services.html">Services</a></li>
+                             <li class="nav-item"><a href="restaurant.html">The Golden Duck</a></li>
+                             <li class="nav-item"><a href="reservations.html">Reservations</a></li>
+                             <li class="nav-item"><a href="contact.html">Contact</a></li>
+                          </ul> 
+                    </div>
+                   </div>
+                 </nav>
 		</header>
 	</div>
 	<div class="background" float>
-		<img id="home" src="../assets/img/portfolio/contacto.jpeg" alt="" class="background">
+		<img id="home" src="../assets/img/portfolio/contacto.jpeg" alt="Cleck Banner" class="background">
 	</div>
+
+      <section id="contact" class="contact py-5" style="background-color: darkslategray">
+        <div class="container">
+          <h2 class="text-center mb-4 titles">Contact</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <form>
+                <div class="form-group">
+                  <label for="name">Full name</label>
+                  <input type="text" class="form-control" id="name" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder=""></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="background-color: #d7ac46">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Links  -->
@@ -81,5 +112,8 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+   <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>
