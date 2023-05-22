@@ -28,7 +28,6 @@ h1,h2,h3,h4,h5,h6,p {
   text-align: center;
   position: fixed;
   width: 100%;
-  font-family: "Space Grotesk";
   display: table;
   z-index: 1;
     
@@ -40,11 +39,9 @@ h1,h2,h3,h4,h5,h6,p {
     ul {
 	  list-style-type: none;
 	  overflow: hidden;
-	  font-family: "Space Grotesk";
         }
     li {
 	  float: center;
-	  font-family: "Space Grotesk";
 	  display: inline;
         }
     a {
@@ -54,7 +51,6 @@ h1,h2,h3,h4,h5,h6,p {
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
-      font-family: "Space Grotesk";
       box-shadow: inset 0 0 0 0 #d7ac46;
       margin: 0 -.25rem;
       transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -91,7 +87,6 @@ h1,h2,h3,h4,h5,h6,p {
 .contact {
     
     .titles {
-	font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 60px;
     color: white;
@@ -107,13 +102,11 @@ h1,h2,h3,h4,h5,h6,p {
     .container {
         
         .titles {
-	font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 60px;
     color: white;
     }	
        .subtitles {
-	font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 30px;
 	color: darkslategray;
@@ -126,7 +119,6 @@ h1,h2,h3,h4,h5,h6,p {
     .container {
         
         .titles {
-	font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 60px;
     color: darkslategray;
@@ -139,7 +131,6 @@ h1,h2,h3,h4,h5,h6,p {
     .container {
         
         .titles {
-	font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 60px;
     color: white;
@@ -156,7 +147,6 @@ h1,h2,h3,h4,h5,h6,p {
     .container {
         
         .titles {
-	font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 60px;
     color: darkslategray;
@@ -174,14 +164,12 @@ h1,h2,h3,h4,h5,h6,p {
 	width: 100%;
     
     .titles{
-    font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 60px;
     color: white;
     }
     
     .subtitles {
-	font-family: "Space Grotesk";
 	text-align: center;
 	font-size: 30px;
 	color: white;
@@ -207,7 +195,6 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 100px;
   padding: 100px;
   font-size: 20px;
-  font-family: "Space Grotesk";
   justify-content: space-between;
             }
         p{
@@ -256,7 +243,6 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 100px;
   padding: 100px;
   font-size: 20px;
-  font-family: "Space Grotesk";
   justify-content: space-between;
             }
 
