@@ -138,7 +138,30 @@ h1,h2,h3,h4,h5,h6,p,a {
         
         label {
         color: white;
-    }
+                }
+        .pintura {
+      overflow: hidden;
+      padding-left: 10%;
+
+        img {
+      animation: slide-in 3s ease-out forwards;
+            }
+                }
+            }
+        }
+
+.explicacion {
+    
+    .container {
+        
+        .muestra {
+      overflow: hidden;
+      padding-left: 10%;
+
+        img {
+      animation: slide-in 3s ease-out forwards;
+            }
+                }
     }
 }
 
@@ -285,3 +308,12 @@ h1,h2,h3,h4,h5,h6,p,a {
 		height: auto;
 	}
 }
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+      }
+  100% {
+    transform: translateX(0);
+      }
+                    }

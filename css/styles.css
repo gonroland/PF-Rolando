@@ -84,6 +84,17 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: white; }
 .reservas .container label {
   color: white; }
+.reservas .container .pintura {
+  overflow: hidden;
+  padding-left: 10%; }
+  .reservas .container .pintura img {
+    animation: slide-in 3s ease-out forwards; }
+
+.explicacion .container .muestra {
+  overflow: hidden;
+  padding-left: 10%; }
+  .explicacion .container .muestra img {
+    animation: slide-in 3s ease-out forwards; }
 
 .menu .container .titles {
   text-align: center;
@@ -184,3 +195,8 @@ h1, h2, h3, h4, h5, h6, p, a {
   body {
     width: auto;
     height: auto; } }
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
