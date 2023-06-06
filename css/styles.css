@@ -26,6 +26,9 @@ p:not(.exclude-font), a:not(.exclude-font) {
   left: 0;
   right: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: table;
   z-index: 1; }
   .topnav .navbar {
@@ -340,6 +343,3 @@ p:not(.exclude-font), a:not(.exclude-font) {
   .overlay {
     max-height: 50%;
     overflow-y: hidden; } }
-@media (max-width: 768px) {
-  .topnav {
-    width: auto; } }
