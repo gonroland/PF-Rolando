@@ -340,13 +340,13 @@ p:not(.exclude-font), a:not(.exclude-font) {
   
 .image-box {
       animation: slide-in 3s ease-in forwards;
-      object-fit: cover;
+      padding-left: 10%;
       max-height: 400px;
       overflow: hidden;
 }
 .image-box-2 {
       animation: slide-out 3s ease-in backwards;
-      object-fit: cover;
+      padding-right: 10%;
       max-height: 400px;
       overflow: hidden;
 }
