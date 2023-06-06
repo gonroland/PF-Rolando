@@ -238,7 +238,7 @@ p:not(.exclude-font), a:not(.exclude-font) {
   max-height: 400px; }
 
 .image-box-2 {
-  animation: slide-out 3s ease-out forwards;
+  animation: slide-out 3s ease-in backwards;
   object-fit: cover;
   max-width: 100%;
   max-height: 400px; }
