@@ -50,10 +50,11 @@ p:not(.exclude-font), a:not(.exclude-font) {
 	  display: inline;
         }
     a {
+      display: block;
       color: #d7ac46;
       float: none;
       text-align: center;
-      padding: 14px 16px;
+      padding: 10px 16px;
       text-decoration: none;
       font-size: 17px;
       box-shadow: inset 0 0 0 0 #d7ac46;
