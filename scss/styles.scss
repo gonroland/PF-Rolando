@@ -487,3 +487,9 @@ p:not(.exclude-font), a:not(.exclude-font) {
     overflow-y: hidden;
   }
 }
+
+@media (max-width: 768px) {
+  .topnav {
+    width: auto;
+  }
+}

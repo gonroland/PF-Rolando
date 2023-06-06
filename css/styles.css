@@ -340,3 +340,6 @@ p:not(.exclude-font), a:not(.exclude-font) {
   .overlay {
     max-height: 50%;
     overflow-y: hidden; } }
+@media (max-width: 768px) {
+  .topnav {
+    width: auto; } }
