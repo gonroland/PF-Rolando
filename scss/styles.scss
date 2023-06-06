@@ -204,13 +204,11 @@ p:not(.exclude-font), a:not(.exclude-font) {
         top: 30%;
         position: relative;
         text-align: center;
-        max-height: calc(100% - 100px);
+        max-height: 100vh;
         overflow-y: auto;
 
 
              div {
-                margin-top: 40px;
-                margin-bottom: 40px;
 
                  a {
                     background-color: #d7ac46;
@@ -224,11 +222,6 @@ p:not(.exclude-font), a:not(.exclude-font) {
 
             }
 }
-
-  
-
-
-
 
 .logo {
 	width: 100px;
@@ -483,5 +476,12 @@ p:not(.exclude-font), a:not(.exclude-font) {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 800px) {
+  .overlay {
+    max-height: 50%;
+    overflow-y: hidden;
   }
 }

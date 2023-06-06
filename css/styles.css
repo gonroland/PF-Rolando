@@ -163,17 +163,14 @@ p:not(.exclude-font), a:not(.exclude-font) {
     top: 30%;
     position: relative;
     text-align: center;
-    max-height: calc(100% - 100px);
+    max-height: 100vh;
     overflow-y: auto; }
-    .background .overlay div {
-      margin-top: 40px;
-      margin-bottom: 40px; }
-      .background .overlay div a {
-        background-color: #d7ac46;
-        color: white; }
-      .background .overlay div a:hover {
-        background-color: #161616;
-        color: #d7ac46; }
+    .background .overlay div a {
+      background-color: #d7ac46;
+      color: white; }
+    .background .overlay div a:hover {
+      background-color: #161616;
+      color: #d7ac46; }
 
 .logo {
   width: 100px;
@@ -337,3 +334,7 @@ p:not(.exclude-font), a:not(.exclude-font) {
     transform: translateX(-100%); }
   100% {
     transform: translateX(0); } }
+@media (max-width: 800px) {
+  .overlay {
+    max-height: 50%;
+    overflow-y: hidden; } }
