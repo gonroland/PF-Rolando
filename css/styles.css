@@ -23,6 +23,8 @@ p:not(.exclude-font), a:not(.exclude-font) {
   background-color: #161616;
   text-align: center;
   position: fixed;
+  left: 0;
+  right: 0;
   width: 100%;
   display: table;
   z-index: 1; }
