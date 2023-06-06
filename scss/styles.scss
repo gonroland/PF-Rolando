@@ -339,12 +339,13 @@ p:not(.exclude-font), a:not(.exclude-font) {
         }
   
 
-/*
+
 .image-box, {
       animation: slide-in 3s ease-out forwards;
       object-fit: cover;
       max-width: 100%;
       max-height: 400px;
+      overflow: hidden;
 }
 
 .image-box-2 {
@@ -352,9 +353,10 @@ p:not(.exclude-font), a:not(.exclude-font) {
       object-fit: cover;
       max-width: 100%;
       max-height: 400px;
+      overflow: hidden;
 }
 
-*/
+
 .btns-i { a {
              background-color: #d7ac46;
             color: white;
