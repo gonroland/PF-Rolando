@@ -339,16 +339,14 @@ p:not(.exclude-font), a:not(.exclude-font) {
         }
   
 .image-box {
-      animation: slide-in 3s ease-in forwards;
-      padding-left: 10%;
-      max-height: 400px;
       overflow: hidden;
+      animation: slide-in 3s ease-in forwards;
+      max-height: 400px;
 }
 .image-box-2 {
-      animation: slide-out 3s ease-in backwards;
-      padding-right: 10%;
-      max-height: 400px;
       overflow: hidden;
+      animation: slide-out 3s ease-in backwards;
+      max-height: 400px;
 }
 
 

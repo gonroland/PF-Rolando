@@ -232,16 +232,14 @@ p:not(.exclude-font), a:not(.exclude-font) {
   padding: 80px 0; }
 
 .image-box {
+  overflow: hidden;
   animation: slide-in 3s ease-in forwards;
-  padding-left: 10%;
-  max-height: 400px;
-  overflow: hidden; }
+  max-height: 400px; }
 
 .image-box-2 {
+  overflow: hidden;
   animation: slide-out 3s ease-in backwards;
-  padding-right: 10%;
-  max-height: 400px;
-  overflow: hidden; }
+  max-height: 400px; }
 
 .btns-i a {
   background-color: #d7ac46;
