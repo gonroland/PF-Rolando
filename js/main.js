@@ -11,16 +11,17 @@ var fechaSalida = new Date(fsa + " 00:00 -0300")
 
 if (fechaSalida < fechaLlegada) {
   alert("La fecha de salida debe ser posterior a la fecha de llegada.")
+    return false
         }
     else {
         alert("Usted ingresará al hotel el día " + fechaLlegada.toLocaleDateString())
         alert("Usted saldrá del hotel el día " + fechaSalida.toLocaleDateString())
     }
 
-let valid = false
-
 //var hab = document.getElementById("habitacion")
 //alert("Usted eligió la habitación " + hab.options[hab.selectedIndex].text)
+
+let valid = false
 
 do {
     let habitacionIngresada = prompt("Ingresar Habitación")
