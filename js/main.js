@@ -3,17 +3,24 @@
 function handleSubmit(evento) {
 
 event.preventDefault()
-var fll = document.getElementById("fecha-llegada").value
-var fsa = document.getElementById("fecha-salida").value
+var fllInput = document.getElementById("fecha-llegada")
+var fsaInput = document.getElementById("fecha-salida")
 
+var fsa = fsaInput.value;
+var fll = fllInput.value;
+    
 var fechaLlegada = new Date(fll + " 00:00 -0300")
 var fechaSalida = new Date(fsa + " 00:00 -0300")
 
 if (fechaSalida < fechaLlegada) {
   alert("La fecha de salida debe ser posterior a la fecha de llegada.")
+  fllInput.style.backgroundColor = "red"
+  fsaInput.style.backgroundColor = "red"
     return false
         }
     else {
+        fllInput.style.backgroundColor = ""
+        fsaInput.style.backgroundColor = ""
         alert("Usted ingresará al hotel el día " + fechaLlegada.toLocaleDateString())
         alert("Usted saldrá del hotel el día " + fechaSalida.toLocaleDateString())
     }
