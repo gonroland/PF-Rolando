@@ -1,6 +1,6 @@
 // JavaScript Document
 
-function handleSubmit(evento) {
+function handleSubmit() {
 
 event.preventDefault()
 var fllInput = document.getElementById("fecha-llegada")
@@ -29,18 +29,23 @@ if (fechaSalida < fechaLlegada) {
 //alert("Usted eligió la habitación " + hab.options[hab.selectedIndex].text)
 
 let valid = false
+const tiposHabitaciones = ["Suite", "Exclusive", "Superior"]
 
 do {
-    let habitacionIngresada = prompt("Ingresar Habitación")
-    if (!isNaN(parseInt(habitacionIngresada))) {
-        alert("El dato ingresado es erróneo. Ingrese un tipo de habitación")
-        }
-    else {
+  const busqueda = prompt("Ingrese su habitación")
+  const resultados = tiposHabitaciones.filter(habitacion => habitacion === busqueda)
+
+  if (resultados.length > 0) {
         valid = true
-        alert("La habitación seleccionada es " + habitacionIngresada)
+        alert("La habitación seleccionada es " + resultados.join(","))
+                            } 
+  else {
+    alert("El dato ingresado no corresponde con una de nuestra selección de habitaciones. Ingrese un tipo de habitación válido.")
         }
-    }while(!valid)
+    }while (!valid)
 }
+
+
 
 document.getElementById("reservas-form").addEventListener("submit",handleSubmit)
 
