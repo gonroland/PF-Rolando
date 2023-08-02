@@ -2,6 +2,8 @@
 
 function handleSubmit() {
 
+//Seleccion de fecha de llegada y salida
+
 event.preventDefault()
 var fllInput = document.getElementById("fecha-llegada")
 var fsaInput = document.getElementById("fecha-salida")
@@ -21,31 +23,32 @@ if (fechaSalida < fechaLlegada) {
     else {
         fllInput.style.backgroundColor = ""
         fsaInput.style.backgroundColor = ""
-        alert("Usted ingresará al hotel el día " + fechaLlegada.toLocaleDateString())
-        alert("Usted saldrá del hotel el día " + fechaSalida.toLocaleDateString())
     }
+    
+var formato = { day: 'numeric', month: '2-digit', year: 'numeric' };
+var fechaLlegadaFormato = fechaLlegada.toLocaleDateString('es-ES', formato);
+var fechaSalidaFormato = fechaSalida.toLocaleDateString('es-ES', formato);
 
-//var hab = document.getElementById("habitacion")
-//alert("Usted eligió la habitación " + hab.options[hab.selectedIndex].text)
+localStorage.setItem('fechaArrival', JSON.stringify(fechaLlegadaFormato))
+localStorage.setItem('fechaExit', JSON.stringify(fechaSalidaFormato))
 
-let valid = false
-const tiposHabitaciones = ["Suite", "Exclusive", "Superior"]
+//Seleccion de Habitacion
 
-do {
-  const busqueda = prompt("Ingrese su habitación")
-  const resultados = tiposHabitaciones.filter(habitacion => habitacion === busqueda)
+const tiposHabitaciones = [
+  { nombre: "Superior"},
+  { nombre: "Exclusive"},
+  { nombre: "Suite"}
+]
 
-  if (resultados.length > 0) {
-        valid = true
-        alert("La habitación seleccionada es " + resultados.join(","))
-                            } 
-  else {
-    alert("El dato ingresado no corresponde con una de nuestra selección de habitaciones. Ingrese un tipo de habitación válido.")
-        }
-    }while (!valid)
+var hab = document.getElementById("habitacion")
+var selectedIndex = hab.selectedIndex
+
+var habitacionSeleccionada = tiposHabitaciones[selectedIndex]
+
+localStorage.setItem('habitacion', JSON.stringify(habitacionSeleccionada))
+
+window.location.href = "roomRatesList.html";
+    
 }
 
-
-
 document.getElementById("reservas-form").addEventListener("submit",handleSubmit)
-
