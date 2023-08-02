@@ -15,7 +15,12 @@ var fechaLlegada = new Date(fll + " 00:00 -0300")
 var fechaSalida = new Date(fsa + " 00:00 -0300")
 
 if (fechaSalida < fechaLlegada) {
-  alert("La fecha de salida debe ser posterior a la fecha de llegada.")
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong!',
+      footer: 'Check-in date should be before the check-out date.'
+    })
   fllInput.style.backgroundColor = "red"
   fsaInput.style.backgroundColor = "red"
     return false
