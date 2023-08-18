@@ -5,9 +5,7 @@ var fechaLlegada = JSON.parse(localStorage.getItem('fechaArrival'));
 var fechaSalida = JSON.parse(localStorage.getItem('fechaExit'));
 var habitacionSeleccionada = JSON.parse(localStorage.getItem('habitacion'));
 
-
 var roomRatesTableBody = document.getElementById('roomRatesTableBody');
-
 
 var row = document.createElement('tr');
 var arrivalCell = document.createElement('td');
